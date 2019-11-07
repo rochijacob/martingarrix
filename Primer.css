@@ -69,6 +69,7 @@ h4 {
     text-decoration: underline;
     text-transform: uppercase;
     letter-spacing: 1px;
+    flex-basis: 100%;
 }
 
 p {
@@ -162,19 +163,23 @@ form {
 
 .gallery{
     margin: 0 auto;
-    display: block;
-    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .galleryimg {
-    float: left;
     padding: 10px;
     margin: 0 auto;
 }
 
 .center {
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
 }
 
 .galleryimg:hover {
@@ -191,7 +196,6 @@ form {
 }
 
 .row {
-   float: left;
    width: 33.3333333%;
 }
 
@@ -237,8 +241,12 @@ form {
     background-color:rgba(255, 255, 255, 0.200);
     border-radius: 15px;
     text-align: center;
-    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 20px;
+    flex-basis: 25%;
 }
 
 /*
@@ -255,18 +263,27 @@ form {
 .container {
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .logo {
     width: 20%;
-    float: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 20%;
+
 }
 
 .menu {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     padding-top: 35px;
     padding-bottom: 35px;
     padding-right: 5px;
+    flex-basis: 80%;
 }
 
 .main-logo {
@@ -320,16 +337,20 @@ form {
 */
 
 .left-video {
-float: left;
+flex-basis: 70%;
  margin-left: 40px;
  width: 70%;
+ 
 }
 
 .right-video {
-float: right;
+flex-basis: 70%;
  text-align: right;
  margin-right: 40px;
  width: 70%;
+ justify-self: flex-end;
+ margin-left: auto;
+ 
 }
 
 .mainpagetour {
@@ -339,7 +360,11 @@ float: right;
 .image-align {
     margin: 0 auto;
     width: 80%;
-    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
 }
 
 .disctext {
@@ -350,6 +375,14 @@ float: right;
     width: 100%;
 }
 
+#videoweb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+}
 
 #shop-table td, #shop-table th {
     width: 100%;
@@ -366,6 +399,11 @@ float: right;
 }
 
 #tour {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
     margin: 0 auto;
     padding: 20px;
     padding-top: 40px;
