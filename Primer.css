@@ -34,18 +34,10 @@ body.videos {
     background-position: center top 30%; 
 }
 
-body.contacto {
-    background-image: url('Imagenes/Martinv2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 50%;
-    background-position-x: 85% ;
-    background-position-y: 100%;
-  
-}
+
 
 h1 {
-    font-size: 70px;
+    font-size: 90px;
     text-transform: uppercase;
     font-family: 'primetimeregular';
     text-align: right;
@@ -133,33 +125,44 @@ nav ul li:hover .dropdown{
 
 }
 
-input {
-    width: 20%;
-    padding: 7px;
-    box-sizing: border-box;
-    margin-left: 20px;
-
-}
-
-input [type=submit] {
-    background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-input:focus {
-    background-color: rgb(108, 56, 138);
-    width: 20%;
-    box-sizing: border-box;
-}
 
 form {
-    margin-top: 10px;
+    margin-top: 50px;
+    transition: all 2.5s ease-in-out;
+    text-align: center;
 }
+
+form .submit {
+    background: indianred;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: rgb(219, 109, 109);
+    cursor: pointer;
+}
+
+input {
+    height: 45px;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
 
 .gallery{
     margin: 0 auto;
@@ -193,6 +196,7 @@ form {
     padding-bottom: 5px;
     padding-left: 20px;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .row {
@@ -249,17 +253,7 @@ form {
     flex-basis: 25%;
 }
 
-/*
-.cart {
-    color: white;
 
-
-} 
-
-.cart:hover {
-    color: rgb(209, 209, 209);
-}
-*/
 .container {
     margin: 0 auto;
     width: 100%;
@@ -312,29 +306,6 @@ form {
     margin: 8px;
 }
 
-/*
-.buy-now-button {
-    background: crimson;
-    border-radius: 6px;
-    color: white;
-    text-align: center;
-    padding: 7px;
-}
-
-.buy-now-button:hoover {
-    color: #B10303;
-}
-
-.product-image {
-    text-align: center;
-    width: 50px;
-}
-
-.buy-bar {
-    font-size: 40px;
-    text-align: right;
-}
-*/
 
 .left-video {
 flex-basis: 70%;
@@ -409,11 +380,6 @@ flex-basis: 70%;
     padding-top: 40px;
 }
 
-/*
-#main-title {
-    margin: 0 auto;
-    padding-bottom: 30px;
-} */
 
 #mgtext {
     margin: 0 auto;
@@ -421,7 +387,7 @@ flex-basis: 70%;
     margin-right: 20px;
 }
 
-.legal-wrap {
-    font-size: 12px;
+.legal-wrap p {
+    font-size: 15px;
 }
 

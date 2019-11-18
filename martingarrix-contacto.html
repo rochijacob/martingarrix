@@ -29,19 +29,19 @@
     </div>
 </header>
 <main>
-    <div class="contact-page">
-        <form>
+    <div class="contact-form">
+        <form id="contact-form">
            <p class="ftext"> Nombre Completo </p>
-            <input type="text" name="nombre-completo" required>
+            <input type="text" class="form-control" placeholder="Tu Nombre completo" name="nombre-completo" required>
             <p class="ftext"> E-Mail </p>
-            <input type="email" name="e-mail" required>
+            <input type="email" name="e-mail" class="form-control" placeholder="Tu E-mail" required>
             <p class="ftext"> Organizacion/ Pais </p>
-            <input type="text" name="Pais">
+            <input type="text"  class="form-control" placeholder="Tu pais y/o organizacion" name="Pais">
             <p class="ftext"> Tema </p>
-            <input type="text" name="tema">
+            <input type="text" class="form-control" placeholder="Porque te contactas" name="tema">
             <p class="ftext"> Mensaje </p>
-            <input type="text" name="mensaje" required><br><br>
-            <input type="button" value="Enviar"  onclick="alert ('Tu mensaje ha sido enviado')" class="button"><br>
+            <textarea name="text" class="form-control" placeholder="Tu Mensaje" rows="4" required></textarea><br><br>
+            <input type="button" value="Enviar" class="form-control submit" onclick="alert ('Tu mensaje ha sido enviado')" class="button"><br>
         </form>
     </div>
 </main>
