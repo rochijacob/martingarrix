@@ -265,7 +265,7 @@ input {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .logo {
@@ -422,6 +422,9 @@ flex-basis: 70%;
     .form-control {
         width: 100%;
     }
+    .container {
+        flex-wrap: wrap;
+    }
 }
 
 /*Tablet*/
@@ -438,10 +441,9 @@ flex-basis: 70%;
     .image-align {
         justify-content: initial;
     }
+    .container {
+        flex-wrap: wrap;
+    }
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-
-}
 
