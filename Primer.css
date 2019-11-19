@@ -9,11 +9,15 @@
 }
 
 
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: black;
     color: white;
     text-emphasis: center;
+    margin: 0;
+    padding: 0;
 }
 
 div.index {
@@ -54,6 +58,7 @@ h2 {
 
 h3 {
     word-spacing: 5px;
+    font-size: 20px;
 }
 
 h4 {
@@ -260,7 +265,7 @@ input {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -355,15 +360,6 @@ flex-basis: 70%;
     align-content: space-around;
 }
 
-#shop-table td, #shop-table th {
-    width: 100%;
-    padding-right: 80px;
-    padding-left: 80px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 30px;
-}
 
 #imagencontacto {
     display: inline-block;
@@ -389,5 +385,63 @@ flex-basis: 70%;
 
 .legal-wrap p {
     font-size: 15px;
+}
+
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 400px) {
+    h3{
+        font-size: 13px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        padding-right: 0;
+        flex-basis: 100%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h1 {
+        text-align: left;
+        font-size: 55px;
+    }
+    .row {
+        width: 100%;
+    }
+    .tourbox {
+        flex-basis: 75%;
+    }
+    .blackcube {
+        display: none;
+    }
+    .form-control {
+        width: 100%;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .row {
+        width: 50%;
+    }
+    .tourbox {
+        flex-basis: 65%;
+    }
+    .blackcube {
+        display: none;
+    }
+    .image-align {
+        justify-content: initial;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
 }
 

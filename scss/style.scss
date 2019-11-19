@@ -1,27 +1,12 @@
-body{
-    color:red;
-}
-.header__navigation {
-    background : #008cba ;
-    padding : 1rem 0 ;
-    margin : 2rem 0 ;
-    text-transform : uppercase ;
-    }
+$colors: (
+    itunes: #FFFFFF,
+    spotify: #42B74E,
+    instagram: #FF00B5
+);
 
-.header__navigation--secondary {
-@extend .header__navigation;
-background : #dfe0e0 ;
-    }
-
-ul {
-    list-style : none ;
-    li { 
-    padding : 15px ;
-    display : inline-block ;
-        a {
-        text-decoration : none ;
-        font-size : 16px ;
-        color : #444 ;
-        }
+@each $redsocial, $bgcolor in $colors {
+    .color#{$redsocial} {
+        color: $bgcolor;
+        font-size: 26px;
     }
 }
