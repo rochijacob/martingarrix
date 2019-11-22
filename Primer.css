@@ -8,7 +8,9 @@
 
 }
 
-
+.bg-light {
+     background-color: none;
+}
 
 
 body {
@@ -20,7 +22,7 @@ body {
     padding: 0;
 }
 
-div.index {
+main.page {
     background-image: url('Imagenes/Backgroundpg1.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -114,15 +116,33 @@ nav a:hover {
     color: #DADADA;
 }
 
-.dropdown {
+.dropdown-toggle::after {
     display: none;
-    position: absolute; 
-    
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(172, 172, 172);
+}    
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.nav-link:hover {
+    color: rgb(202, 202, 202);
 }
 
 nav ul li:hover .dropdown{
     display: block;
-    width: 125px;
+    width: 135px;
     transition: all 1s;
     background-color:rgba(0, 0, 0, 0.507);
     line-height: 35px;
@@ -137,27 +157,28 @@ form {
     text-align: center;
 }
 
+
+
+form .submit:hover {
+    cursor: pointer;
+}
+
 form .submit {
-    background: indianred;
+    background: white;
     border-color: transparent;
-    color: #fff;
+    border: none;
+    color: black;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
 }
-
-form .submit:hover {
-    background-color: rgb(219, 109, 109);
-    cursor: pointer;
-}
-
 input {
     height: 45px;
 }
 
-.form-control {
+.formulario {
     width: 600px;
     background: transparent;
     border: none;
@@ -178,6 +199,7 @@ input {
 .galleryimg {
     padding: 10px;
     margin: 0 auto;
+    width: 50%;
 }
 
 .center {
@@ -204,7 +226,7 @@ input {
     font-weight: bold;
 }
 
-.row {
+.fila {
    width: 33.3333333%;
 }
 
@@ -281,8 +303,8 @@ input {
     justify-content: flex-end;
     padding-top: 35px;
     padding-bottom: 35px;
-    padding-right: 5px;
     flex-basis: 80%;
+    width: 100%;
 }
 
 .main-logo {
@@ -407,10 +429,10 @@ flex-basis: 70%;
         font-size: 30px;
     }
     h1 {
-        text-align: left;
+        text-align: right;
         font-size: 55px;
     }
-    .row {
+    .fila {
         width: 100%;
     }
     .tourbox {
@@ -419,17 +441,44 @@ flex-basis: 70%;
     .blackcube {
         display: none;
     }
-    .form-control {
+    .formulario {
         width: 100%;
     }
     .container {
         flex-wrap: wrap;
     }
+    .right-video {
+        flex-basis: 100%;
+        margin-right: 7px;
+        margin-left: 7px;
+        text-align: center;
+
+    }
+    .image-align {
+        width: 100%;
+    }
+    .left-video {
+        flex-basis: 100%;
+        margin-right: 7px;
+        margin-left: 7px;
+        text-align: center;
+    }
+    .galleryimg {
+        width: 100%;
+    }
 }
 
 /*Tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .row {
+    h1 {
+        font-size: 80px;
+        text-align: right;
+        padding-top: 130px;
+        padding-bottom: 100px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    .fila {
         width: 50%;
     }
     .tourbox {
@@ -440,9 +489,28 @@ flex-basis: 70%;
     }
     .image-align {
         justify-content: initial;
+        width: 100%;
     }
     .container {
         flex-wrap: wrap;
+    }
+    .right-video {
+        flex-basis: 100%;
+        margin-right: 7px;
+        margin-left: 7px;
+        text-align: center;
+    }
+    .left-video {
+        flex-basis: 100%;
+        margin-right: 7px;
+        margin-left: 7px;
+        text-align: center;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .galleryimg {
+        width: 100%;
     }
 }
 

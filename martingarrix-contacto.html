@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta  charset="utf-8">
     <title>Martin Garrix</title>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="Primer.css" />
     <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body class="contacto">
 <header>
-    <div class="container">
-        <div class="logo">
-        <a href="index.html">
-        <img src="Imagenes/logo.jpg" style="width: 150px;" class="main-logo">
-        </a>
-        </div>
-    <nav class="menu">
-        <ul>
-            <li><a>Multimedia</a>
-            <ul class="dropdown">
-                <li><a href="martingarrix-videos.html">Videos</a></li>
-                <li><a href="martingarrix-galeria.html">Galeria</a></li>
-            </ul>
-        </li>
-        <li><a href="martingarrix-Contacto.html">Contacto</a></li>
-        <li><a class="itunes" href="https://music.apple.com/us/artist/martin-garrix/430932944"><ion-icon class="coloritunes" name="logo-apple"></ion-icon></a></li>
-        <li><a class="spotify" href="https://open.spotify.com/artist/60d24wfXkVzDSfLS6hyCjZ"><ion-icon class="colorspotify" name="musical-notes"></ion-icon></a></li>
-        <li><a class="instagram" href="https://www.instagram.com/martingarrix/?hl=en"><ion-icon class="colorinstagram" name="logo-instagram"></ion-icon></a></li>
-        </ul>
-    </nav>
-    </div>
+        <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.jpg" style="width: 150px;" class="main-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>                 
+               </button>                
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                   <ul class="navbar-nav">             
+                       <li class="nav-item">      
+                           <a class="nav-link" href="martingarrix-videos.html">Videos</a>          
+                       </li>            
+                       <li class="nav-item">         
+                          <a class="nav-link" href="martingarrix-galeria.html">Galeria</a>           
+                       </li>            
+                       <li class="nav-item dropdown">            
+                           <a class="nav-link dropdown-toggle" href="martingarrix-Contacto.html">Contacto</a>          
+                       </li>            
+                       <li class="nav-item dropdown">            
+                           <a class="nav-link dropdown-toggle itunes" href="https://music.apple.com/us/artist/martin-garrix/430932944"><ion-icon class="coloritunes" name="logo-apple"></ion-icon></a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle spotify" href="https://open.spotify.com/artist/60d24wfXkVzDSfLS6hyCjZ"><ion-icon class="colorspotify" name="musical-notes"></ion-icon></a></a>
+                       </li>
+                       <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle instagram" href="https://www.instagram.com/martingarrix/?hl=en"><ion-icon class="colorinstagram" name="logo-instagram"></ion-icon></a>
+                       </li>            
+                   </ul>                          
+               </div>                          
+           </nav>     
 </header>
 <main>
     <div class="contact-form">
         <form id="contact-form">
            <p class="ftext"> Nombre Completo </p>
-            <input type="text" class="form-control" placeholder="Tu Nombre completo" name="nombre-completo" required>
+            <input type="text" class="formulario" placeholder="Tu Nombre completo" name="nombre-completo" required>
             <p class="ftext"> E-Mail </p>
-            <input type="email" name="e-mail" class="form-control" placeholder="Tu E-mail" required>
+            <input type="email" name="e-mail" class="formulario" placeholder="Tu E-mail" required>
             <p class="ftext"> Organizacion/ Pais </p>
-            <input type="text"  class="form-control" placeholder="Tu pais y/o organizacion" name="Pais">
+            <input type="text"  class="formulario" placeholder="Tu pais y/o organizacion" name="Pais">
             <p class="ftext"> Tema </p>
-            <input type="text" class="form-control" placeholder="Porque te contactas" name="tema">
+            <input type="text" class="formulario" placeholder="Porque te contactas" name="tema">
             <p class="ftext"> Mensaje </p>
-            <textarea name="text" class="form-control" placeholder="Tu Mensaje" rows="4" required></textarea><br><br>
-            <input type="button" value="Enviar" class="form-control submit" onclick="alert ('Tu mensaje ha sido enviado')" class="button"><br>
+            <textarea name="text" class="formulario" placeholder="Tu Mensaje" rows="4" required></textarea><br><br>
+            <input type="button" value="Enviar" class="formulario submit btn btn-primary" onclick="alert ('Tu mensaje ha sido enviado')" class="button"><br>
         </form>
     </div>
 </main>
@@ -57,4 +66,8 @@
             <a class="underline">Legal</a></p>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
