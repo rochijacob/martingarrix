@@ -40,7 +40,13 @@ body.videos {
     background-position: center top 30%; 
 }
 
-
+main.contact {
+    background-image: url('Imagenes/contactbkg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 1000px 700px;
+}
 
 h1 {
     font-size: 90px;
@@ -140,6 +146,7 @@ nav a:hover {
     color: rgb(202, 202, 202);
 }
 
+
 nav ul li:hover .dropdown{
     display: block;
     width: 135px;
@@ -150,13 +157,16 @@ nav ul li:hover .dropdown{
 
 }
 
+btn-primary {
+    border-color: none;
+}
 
 form {
     margin-top: 50px;
+    margin-bottom: 20px;
     transition: all 2.5s ease-in-out;
     text-align: center;
 }
-
 
 
 form .submit:hover {
@@ -227,7 +237,8 @@ input {
 }
 
 .fila {
-   width: 33.3333333%;
+   width: 25%;
+   padding: 3px;
 }
 
 .blackcube {
@@ -274,7 +285,7 @@ input {
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     margin: 20px;
     flex-basis: 25%;
