@@ -6,6 +6,7 @@
         <meta  charset="utf-8">
         <meta name="description" content="Pagina Web tributo a el DJ Martin Garrix, quien continua superandose y logrando cada vez metas mas ambiciosas, llegando a los reproductores musicales de millones de personas">
         <meta name="keywords" content="html, css, martin garrix, garrix, DJ, electronica, musica, holanda, joven, tour, young, age">
+        <meta name="google-site-verification" content="f1ZHFVSUhREcHKQ_ROQRoF0ufGYiy4tajgAo6AycAkA" />
     <title>Martin Garrix</title>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="Primer.css" />
@@ -14,10 +15,11 @@
 </head>
 <body>
 <div class="index">
+<!-- Barra de Navegacion -->
 <header>
 <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
      <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.jpg" style="width: 150px;" class="main-logo"></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler btnborder" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-reorder"></span>               
     </button>                
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -43,28 +45,58 @@
         </ul>                          
     </div>                          
 </nav>                                                                                                                             
-   
 </header>
 </div>
+<!-- Pagina Principal -->
 <main class= "page">
 <div>
     <div id="main-title">
-        <h1>Martin <br> Garrix</h1>
+        <h1><!-- Titulo en JS --></h1>
     </div>
-    <div id="tour">
-        <div class="tourbox">
-            <h4>Viernes 18 de Octubre</h4>
-            <p>8PM Amsterdam RAI</p>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="tour">
+                <div class="tourbox">
+                    <h4>Viernes 18 de Octubre</h4>
+                    <p>8PM Amsterdam RAI</p>
+                </div>
+                <div class="tourbox">
+                    <h4>Sabado 19 de Octubre</h4>
+                    <p>8PM Amsterdam RAI</p>
+                </div>
+                <div class="tourbox">
+                    <h4>Viernes 25 de Octubre</h4>
+                    <p>7PM Pacific Colliseum at the PNE, Vancouver</p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <div id="tour2">
+                <div class="tourbox">
+                    <h4>Sabado 14 de Diciembre</h4>
+                    <p>10PM JIexpo Kemayoran <br> Jakarta</p>
+                </div>
+                <div class="tourbox">
+                    <h4>Jueves 19 de Diciembre</h4>
+                    <p>7PM Al Fasaliah Hotel, Riyadh</p>
+                </div>
+                <div class="tourbox">
+                    <h4>Viernes 25 de Octubre</h4>
+                    <p>9PM Juanilo Beach, Punta Cana</p>
+                </div>
+                </div>
+            </div> 
         </div>
-        <div class="tourbox">
-            <h4>Sabado 19 de Octubre</h4>
-            <p>8PM Amsterdam RAI</p>
-        </div>
-        <div class="tourbox">
-            <h4>Viernes 25 de Octubre</h4>
-            <p>7PM Pacific Colliseum at the PNE, Vancouver</p>
-        </div>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 </div>
 <div class="index2">
     <div id="mgtext">
@@ -76,21 +108,21 @@
         <div class="fila">
             <div class="cube">
                 <a href="http://stmpd.co/ITNOLID" target="_blank">
-                <img src="Imagenes/inthenameoflove.jpg" width="200" height="200"><br>
+                <img src="Imagenes/inthenameoflove.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>In the Name of Love <br> 2016</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/LIDFA?fbclid=IwAR1Ht3dCtMFyYrNpVy93IHdH4-bTJ1eYiq3lctOyYULa7Wl7c8zv22qkElc" target="_blank">
-                <img src="Imagenes/David_Guetta,_Martin_Garrix_and_Brooks_Like_I_Do.png" width="200" height="200"><br>
+                <img src="Imagenes/David_Guetta,_Martin_Garrix_and_Brooks_Like_I_Do.png" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Like I do (feat. David Guetta and Brooks) - 2018</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/STBLRg" target="_blank">
-                <img  src="Imagenes/scared-to-be-lonely-martin-garrix.jpg" width="200" height="200" > <br>
+                <img  src="Imagenes/scared-to-be-lonely-martin-garrix.jpg" width="200" height="200" alt="imagen discografia"> <br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Scared to Be Lonely (feat. Dua Lipa) - 2017</p></div>
@@ -99,21 +131,21 @@
         <div class="fila">
             <div class="cube">
                 <a href="http://stmpd.co/MLGOID" target="_blank">
-                <img src="Imagenes/gameover.jpg" width="200" height="200"><br>
+                <img src="Imagenes/gameover.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
-                <div class="disctext"><p>Game Over (feat. Looper) - 2018</p></div>
+                <div class="disctext"><p>Game Over (feat. Looper) <br> 2018</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/TFY" target="_blank">
-                <img src="Imagenes/Thereforyou.jpg" width="200" height="200"><br>
+                <img src="Imagenes/Thereforyou.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>There For You (feat.Troye Sivan) - 2017</p></div>
             </div>
             <div class="cube">
                 <a  href="http://stmpd.co/MGBNSID" target="_blank">
-                <img src="Imagenes/sofaraway.jpg" width="200" height="200"><br>
+                <img src="Imagenes/sofaraway.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>No Sleep (feat. Bonn) - 2019</p></div>
@@ -122,21 +154,21 @@
         <div class="fila">
             <div class="cube">
                 <a href="http://stmpd.co/MGYTBID" target="_blank">
-                <img src="Imagenes/yot.jpg"  width="200" height="200"><br>
+                <img src="Imagenes/yot.jpg"  width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Yottabyte <br> 2018</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/LITWi4" target="_blank">
-                <img src="Imagenes/lionsinthew.jpg"  width="200" height="200"><br>
+                <img src="Imagenes/lionsinthew.jpg"  width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Lions In the Wild <br> 2016</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/MKOCFA" target="_blank">
-                <img src="Imagenes/ocean.jpg" width="200" height="200"><br>
+                <img src="Imagenes/ocean.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Ocean (feat. Khalid) - 2018</p></div>
@@ -145,21 +177,21 @@
         <div class="fila">
             <div class="cube">
                 <a href="http://stmpd.co/MDTLID" target="_blank">
-                <img src="Imagenes/usedtl.jpg"  width="200" height="200"><br>
+                <img src="Imagenes/usedtl.jpg"  width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Used To Love (feat. Dean Lewis) <br> 2019</p></div>
             </div>
             <div class="cube">                  
                 <a href="http://stmpd.co/MGMTNID" target="_blank">
-                <img src="Imagenes/mistaken.jpg"  width="200" height="200"><br>
+                <img src="Imagenes/mistaken.jpg"  width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Mistaken <br> 2019</p></div>
             </div>
             <div class="cube">
                 <a href="http://stmpd.co/MGMDRID" target="_blank">
-                <img src="Imagenes/dreamer.jpg" width="200" height="200"><br>
+                <img src="Imagenes/dreamer.jpg" width="200" height="200" alt="imagen discografia"><br>
                 <div class="blackcube"></div>
                 </a>
                 <div class="disctext"><p>Dreamer - 2019</p></div>
@@ -169,6 +201,7 @@
     </div>
 </div>
 </main>
+<!-- Pie de Pagina -->
 <footer>
     <div class="legal-wrap">
             <p>© 2019 Martin Garrix Group. All rights reserved |
@@ -180,5 +213,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>

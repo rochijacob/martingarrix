@@ -8,6 +8,19 @@
 
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 .bg-light {
      background-color: none;
 }
@@ -71,6 +84,8 @@ h3 {
 
 h4 {
     font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
     text-decoration: underline;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -124,6 +139,11 @@ nav a:hover {
 
 button .fa {
     font-size: 27px;
+}
+
+.btnborder {
+    outline: none !important;
+    box-shadow: none;
 }
 
 .dropdown-toggle::after {
@@ -255,6 +275,14 @@ input {
     opacity: 1;
 }
 
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev {
+    width: 5%;
+} 
+
 .blackcube:hover {
     opacity: 0;
     transition: all 0.55s;
@@ -317,7 +345,7 @@ input {
     display: flex;
     justify-content: flex-end;
     padding-top: 0px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     flex-basis: 80%;
     width: 100%;
 }
@@ -347,7 +375,6 @@ input {
     text-align: center;
     margin: 8px;
 }
-
 
 .left-video {
 flex-basis: 70%;
@@ -384,6 +411,11 @@ flex-basis: 70%;
     min-height: 50px;
 }
 
+.alert-success {
+    width: 50%;
+    margin: 0 auto;
+}
+
 #discography {
     margin: 0 auto;
     width: 100%;
@@ -396,7 +428,6 @@ flex-basis: 70%;
     align-items: flex-start;
     align-content: space-around;
 }
-
 
 #imagencontacto {
     display: inline-block;
@@ -413,11 +444,44 @@ flex-basis: 70%;
     padding-top: 40px;
 }
 
+#tour2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+}
 
 #mgtext {
     margin: 0 auto;
-    padding: 30px;
+    padding: 35px;
     margin-right: 20px;
+}
+
+#contactbutton {
+    outline: none;
+    box-shadow: none;
+}
+
+#mensajeerror {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#alertbutton {
+    opacity: 0;
+    width: 30%;
+    letter-spacing: 1px;
+    background-color: rgba(255, 0, 0, 0.74);
+    font-weight: bold;
+    margin: 0 auto;
+    border-color: rgb(255, 27, 27);
+    border-width: thick;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .legal-wrap p {
@@ -540,7 +604,7 @@ button span {
         width: 50%;
     }
     .tourbox {
-        flex-basis: 65%;
+        flex-basis: 55%;
         padding-right: 40px;
         padding-left: 40px;
         padding-top: 20px;
